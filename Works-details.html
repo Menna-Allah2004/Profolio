@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Works | Works Details</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Normalize Style -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Style -->
+    <style>
+        body{
+            margin: 2rem auto;
+            padding: 5rem auto;
+        }
+        section .container{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin: 0 auto;
+            /* padding: 0 auto; */
+        }
+        .work{
+            display: flex;
+            flex-flow: column wrap;
+            width: 50rem;
+            border: none;
+        }
+        .work img{
+            width: 100%;
+        }
+        .container p, h1, h2, div{
+            padding-bottom: 1rem;
+        }
+        .title{
+            font-size: 34px;
+            color: var(--dark-color);
+        }
+        @media (max-width: 767px){
+            .container{
+                display: flex;
+                flex-flow: column wrap;
+                align-items: flex-start;
+                margin: 0 auto;
+                gap: 0.5rem;
+            }
+            h1{
+                flex-basis: 10%;
+                font-size: 1.2rem;
+            }
+            .work img{
+                max-width: 100%;
+                width: 350px;
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <i class="fas fa-bars toggle-menu"></i>
+                <ul>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Works.html" style="color: red;">Works</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Hero start -->
+    <section class="">
+        <div class="container">
+            <h1 class="title profile-title">Designing Dashboards with usability in mind</h1>
+            <div class="tags">
+                <p class="year" style="background-color: #FF6464;">2018</p>
+                <span class="section-title">Dashboard, User Experience Design</span>
+            </div>
+            <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
+                amet sint. Velit officia consequat duis enim velit mollit. 
+                Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <div class="work">
+                <img src="images/work-details1.png" alt="">
+            </div>
+            <h1 class="title">Heading 1</h1>
+            <h2 class="title">Heading 2</h2>
+            <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit. 
+                Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <div class="work image">
+                <img src="images/work-details2.png" alt="">
+                <img src="images/work-details3.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Hero end -->
+
+    <!-- Start footer -->
+    <footer>
+        <div class="container">
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <p class="copyright normal-par">
+                Copyright &copy; 2020 All rights reserved 
+            </p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+</body>
+</html>
